@@ -1,6 +1,6 @@
 {
   "name": "nuxt-robots",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a nuxt modules",
   "main": "lib/module.js",
   "files": [
