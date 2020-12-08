@@ -17,7 +17,13 @@ export default {
     'nuxt-robots',
 
     // With options
-    ['nuxt-robots', { /* module options */ }]
+    ['nuxt-robots', { 
+      /* module options */
+      cacheTime: 1000 * 60 * 10,
+      robots: () => {
+        return []
+      }
+    }]
   ]
 }
 ```
@@ -31,9 +37,16 @@ export default {
   ],
   robots: {
     /* module options */
+    cacheTime: 1000 * 60 * 10,
+    robots: () => {
+      return []
+    }
   }
 }
 ```
+### cache time
+
+default 1000 * 60 * 10 s
 
 ## Options
 
