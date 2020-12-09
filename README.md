@@ -1,23 +1,23 @@
-# nuxt-robots
+# @fengsi/nuxt-robots
 
 ## Setup
 
-1. Add `nuxt-robots` dependency to your project
+1. Add `@fengsi/nuxt-robots` dependency to your project
 
 ```bash
-yarn add nuxt-robots # or npm install nuxt-robots
+yarn add @fengsi/nuxt-robots # or npm install @fengsi/nuxt-robots
 ```
 
-2. Add `nuxt-robots` to the `modules` section of `nuxt.config.js`
+2. Add `@fengsi/nuxt-robots` to the `modules` section of `nuxt.config.js`
 
 ```js
 export default {
   modules: [
     // Simple usage
-    'nuxt-robots',
+    '@fengsi/nuxt-robots',
 
     // With options
-    ['nuxt-robots', { 
+    ['@fengsi/nuxt-robots', { 
       /* module options */
       cacheTime: 1000 * 60 * 10,
       robots: () => {
@@ -33,7 +33,7 @@ export default {
 ```js
 export default {
   modules: [
-    'nuxt-robots'
+    '@fengsi/nuxt-robots'
   ],
   robots: {
     /* module options */
