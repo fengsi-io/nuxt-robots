@@ -57,8 +57,11 @@ The module option parameter can be:
 ```js
 export default {
   robots: {
-    UserAgent: '*',
-    Disallow: '/'
+    cacheTime: 1000 * 60 * 10,
+    robots: {
+      UserAgent: '*',
+      Disallow: '/'
+    }
   }
 }
 ```
@@ -67,12 +70,15 @@ export default {
 
 ```js
 export default {
-  robots: [
-    {
-      UserAgent: 'Googlebot',
-      Disallow: () => '/users' // accepts function
-    }
-  ]
+  robots: {
+    cacheTime: 1000 * 60 * 10,
+    robots: [
+      {
+        UserAgent: 'Googlebot',
+        Disallow: () => '/users' // accepts function
+      }
+    ]
+  }
 }
 ```
 
@@ -80,11 +86,27 @@ export default {
 
 ```js
 export default {
-  robots: () => {
-    return {
-      UserAgent: '*',
-      Disallow: '/'
+  robots: {
+    cacheTime: 1000 * 60 * 10,
+    robots: () => {
+      return {
+        UserAgent: '*',
+        Disallow: '/'
+      }
     }
+  }
+}
+```
+
+### `null`
+
+status code: 404
+
+```js
+export default {
+  robots: {
+    cacheTime: 1000 * 60 * 10,
+    robots: null
   }
 }
 ```
